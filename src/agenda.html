@@ -14,20 +14,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
   <body onload="getAppointments()">
-    <div class="topnav">
-      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-        <i class="fas fa-bars"></i>
-      </a>
-      <p id="logo">Memoria</p>
-      <div id="links">
-        <a href="#diary">Diary</a>
-        <a href="#health">Health</a>
-        <a href="#agenda">Agenda</a>
-        <a href="#friends-family">Friends & Family</a>
-        <a href="#leisure">Leisure</a>
-        <a href="#community">My community</a>
-      </div>
-    </div>
+        <div class="topnav">
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fas fa-bars"></i>
+                </a>
+                <p id="logo">Memoria</p>
+                <div id="links">
+                    <div class="links-wrapper">
+                        <div class="link-box"><a href="#diary"><p>Diary</p><i class="fas fa-book"></i></a></div>
+                        <div class="link-box"><a href="#health"><p>Health</p><i class="fas fa-file-medical"></i></a></div>
+                        <div class="link-box"><a href="#agenda"><p>Agenda</p><i class="fas fa-calendar-check"></i></a></div>
+                        <div class="link-box"><a href="friends-family.html"><p>Friends & Family</p><i class="fas fa-user-friends"></i></a></div>
+                        <div class="link-box"><a href="leisure.html"><p>Games</p><i class="fas fa-dice"></i></a></div>
+                        <div class="link-box"><a href="community.html"><p>Community</p><i class="fas fa-comments"></i></a></div>
+                    </div>
+                </div>
+            </div>
 
     <div class="greet-text">
       <h1 style="margin-bottom:20px"><span> Agenda </span></h1>
@@ -43,12 +45,12 @@
 
     <div class="agenda-container">
       <label class="agenda"
-        >Cook lunch
+        >Cook lunch for tomorrow
         <input type="checkbox" checked="checked" />
         <span class="checkmark"></span>
       </label>
       <label class="agenda"
-        >Call <a href="">Ivanka</a>
+        >Call <a href="">Ivanka</a> after 12:00
         <input type="checkbox" />
         <span class="checkmark"></span>
       </label>

@@ -7,11 +7,12 @@
     font-family: 'Poppins', sans-serif;
 }
 
-  body {
+body {
     background-color: white;
     text-align: center;
   }
 
+  /* ------------------ Main Page styles ------------------- */
   .topnav {
     overflow: hidden;
     /* background-color: slategray; */
@@ -31,12 +32,11 @@
   }
 
   .topnav a.icon {
-    background: black;
     display: block;
     position: absolute;
     right: 0;
     top: 0;
-    padding: 11px 20px;
+    padding: 5px 20px;
   }
 
   .topnav > a > i {
@@ -52,6 +52,28 @@
   
   #links {
     background-color: #3882AE;
+    position: relative;
+    top: 55px;
+  }
+
+  .links-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    position: relative;
+    top: -55px;
+  }
+
+  .link-box {
+    display: inline-block;
+    width: 45vw;
+    height: 15vh;
+  }
+
+  .links-wrapper i {
+    font-size: 2rem;
+    padding: 7px;
   }
 
   #logo {
@@ -120,10 +142,10 @@
   }
 
   .plan-list > div > p {
-    line-height: 30px;
+    line-height: 50px;
     font-family: 'Poppins', sans-serif; 
     margin: 10px 0 10px 0;
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
 
   .plan-list > div > p > a:visited {
@@ -136,7 +158,20 @@
     line-height: 50px;
 }
 
-.plan-list > div > img {
+  .plan-list i {
+    font-size: 25px;
+    float: left;
+    background-color: #EDE22D;
+    border-radius: 50%;
+    border: 2px #3882AE solid;
+    width: 45px;
+    height: 45px;
+    text-align: center;
+    line-height: 43px;
+    margin: 0 15px;
+  }
+
+  .plan-list > div > img {
   height: 30px;
   float: left;
   margin-left: 20px;
@@ -146,7 +181,7 @@
 }
 
   .greet-text > img {
-    height: 70px;
+    height: 90px;
     margin: 10px;
   }
 
@@ -161,8 +196,9 @@
     padding: 20px;
   }
 
-  .questions > button {
-    background-color: white;
+  .questions button {
+    background-color: #EDE22D;
+    /* border: 2px white; */
     border-radius: 10px;
     width: 45vw;
     height: 30px;
@@ -170,9 +206,138 @@
     font-size: 0.8rem;
   }
 
+  .questions button:focus {
+    outline: none;
+  }
+
   .questions > p {
     font-size: 1.1rem;
     padding: 10px;
+  }
+
+
+/* ---------- Friends & Family section styles -------------- */
+
+  .friends-wrapper h1 {
+    font-family: 'Crimson Text', serif;
+    color: #3882AE;
+    font-weight: 300;
+    margin-top: 10px;
+  }
+
+  .friend-box {
+    margin: 20px auto;
+  }
+
+  .friend-box img {
+    border-radius: 50%;
+    width: 90px;
+    height: 90px;
+    float: left;
+    margin-left: 30px;
+  }
+
+  .friend-box p {
+    display: inline-block;
+    font-size: 0.9rem;
+    line-height: 19px;
+    color: rgb(136, 136, 136);
+    padding: 10px;
+  }
+
+  .friend-box p > span{
+    color: #3882AE;
+    font-weight: 500;
+  }
+
+  .friend-box a:hover {
+    cursor: pointer;
+  }
+
+  .friend-box a:visited {
+    color: #3882AE;
+  }
+
+  /* ---------------- Leisure section styles ----------------- */
+
+  .leisure-wrapper h1 {
+    font-family: 'Crimson Text', serif;
+    color: #3882AE;
+    font-weight: 300;
+    margin-top: 10px;
+  }
+
+  .leisure-wrapper h4 {
+    margin: 10px;
+    font-weight: 300;
+    color: rgb(122, 122, 122);
+  }
+
+  .leisure-wrapper p {
+    color: #3882AE;
+    margin-bottom: 30px;
+  }
+
+  .leisure-wrapper img {
+    width: 100px;
+    margin-top: 50px;
+  }
+
+  /* ------------------- Community -------------------- */
+
+  .community-wrapper h1 {
+    font-family: 'Crimson Text', serif;
+    color: #3882AE;
+    font-weight: 300;
+    margin-top: 10px;
+  }
+
+  .community-wrapper h4 {
+    margin: 10px;
+    font-weight: 300;
+    color: #7a7a7a;
+  }
+
+  .chat-wrapper {
+    text-align: left;
+    margin-left: 20px;
+    margin-top: 40px;
+  }
+
+  .chat-wrapper p {
+    display: inline;
+    font-style: italic;
+    color: #3882AE;
+  }
+
+  .chat-wrapper span {
+    font-family: 'Megrim', cursive;
+    font-size: 1.2rem;
+    color: #3882AE;
+  }
+
+  .chat-list {
+    margin: 10px;
+    margin-bottom: 20px;
+  }
+
+  .chat-list i {
+    color: #3882AE;
+    margin: 7px 10px;;
+    font-size: 25px;
+  }
+
+  .chat-list > span > i {
+    color: #7a7a7a;
+    font-size: 1.2rem;
+    margin-right: 15px;
+    margin-left: 10px;
+  }
+
+
+  .chat-list > span > p {
+    color: #7a7a7a;
+    font-size: 1rem;
   }
 
 /*   Health */
@@ -191,7 +356,7 @@
 }
 
 .medsList .medsItem.checked {
-  color:lightslategray;
+  color: lightslategray;
   text-decoration: line-through;
   background-color: lightgray;
 }
@@ -205,11 +370,11 @@
   padding: 10px;
   border-radius: 5px;
   border: 1px solid;
-  border-color:rgb(139, 133, 133);
+  border-color: rgb(139, 133, 133);
 }
 
 .medsItemText {
-  display:inline-block; 
+  display: inline-block;
   margin-top: 5%;
 }
 
@@ -220,15 +385,15 @@
 }
 
 .appoinmentsList {
- margin: 10px 10px;
- display: none;
- text-align: left;
+  margin: 10px 10px;
+  display: none;
+  text-align: left;
 }
 
-.appListItem{
+.appListItem {
   border-radius: 5px;
   border: 1px solid;
-  border-color:rgb(139, 133, 133);
+  border-color: rgb(139, 133, 133);
   padding: 10px;
   margin-bottom: 5px;
 }
@@ -241,15 +406,15 @@
 }
 
 .contactIcon {
-    font-size: 36px;
-    color: #3882AE;
-    background-color: yellow;
-    border-radius: 50%;
-    border: 2px #3882AE solid;
-    width: 60px;
-    height: 60px;
-    display: inline-block;
-    margin: 10px 20px;
+  font-size: 36px;
+  color: #3882ae;
+  background-color: yellow;
+  border-radius: 50%;
+  border: 2px #3882ae solid;
+  width: 60px;
+  height: 60px;
+  display: inline-block;
+  margin: 10px 20px;
 }
 
 /* Agenda */
@@ -264,18 +429,18 @@
 
 .alignleft {
   float: left;
-  width:20%;
-  text-align:left;
+  width: 20%;
+  text-align: left;
 }
 .aligncenter {
   float: left;
-  width:60%;
-  text-align:center;
+  width: 60%;
+  text-align: center;
 }
 .alignright {
- float: left;
- width:20%;
- text-align:right;
+  float: left;
+  width: 20%;
+  text-align: right;
 }
 
 .agenda-container {
@@ -314,7 +479,7 @@
 }
 
 .agenda input:checked ~ .checkmark {
-  background-color: #2196F3;
+  background-color: #2196f3;
 }
 
 .checkmark:after {

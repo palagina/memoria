@@ -15,12 +15,14 @@
     </a>
     <p id="logo">Memoria</p>
     <div id="links">
-        <a href="#diary">Diary</a>
-        <a href="#health">Health</a>
-        <a href="#agenda">Agenda</a>
-        <a href="#friends-family">Friends & Family</a>
-        <a href="#leisure">Leisure</a>
-        <a href="#community">My community</a>
+      <div class="links-wrapper">
+        <div class="link-box"><a href="#diary"><p>Diary</p><i class="fas fa-book"></i></a></div>
+        <div class="link-box"><a href="#health"><p>Health</p><i class="fas fa-file-medical"></i></a></div>
+        <div class="link-box"><a href="#agenda"><p>Agenda</p><i class="fas fa-calendar-check"></i></a></div>
+        <div class="link-box"><a href="friends-family.html"><p>Friends & Family</p><i class="fas fa-user-friends"></i></a></div>
+        <div class="link-box"><a href="leisure.html"><p>Games</p><i class="fas fa-dice"></i></a></div>
+        <div class="link-box"><a href="community.html"><p>Community</p><i class="fas fa-comments"></i></a></div>
+      </div>
     </div>
 </div>
 
@@ -32,25 +34,25 @@
   <h5> It's sunny and warm out.</h5>
   <p>Here is your plan for today:</p>
   <div class="plan-list">
-      <div id="task1"><img src="../assets/images/birthday.svg"><p>&#8226; buy a birthday present for <a href="#">Christine</a></p></div>
-      <div id="task2"><img src="../assets/images/medication.svg"><p>&#8226; get the <a href="#">medication</a> refill</p></div>
-      <div id="task3"><img src="../assets/images/call.svg"><p>&#8226; call <a href="#">Michael</a> to discuss the vacation</p></div>
+      <div id="task1"><i class="fas fa-birthday-cake"></i><p>&#8226; buy a birthday present for <a href="friends-family.html">Mike</a></p></div>
+      <div id="task2"><i class="fas fa-capsules"></i><p>&#8226; get the <a href="#">medication</a> refill</p></div>
+      <div id="task3"><i class="fas fa-phone"></i><p>&#8226; call <a href="friends-family.html">Melania</a> to discuss the vacation</p></div>
   </div>
 </div>
 
 <div class="questions">
 <p>Do you have something to say?</p>
-<button>Yes, take me to the diary</button>
+<button class="button-diary">Leave a note</button>
 <p>Did you take your medication today?</p>
-<button>Check here</button>
+<button class="button-meds">Check here</button>
 <p>Would you like to check your to-do list?</p>
-<button>Show me</button>
-<p>Want to see your loved ones?</p>
-<button>Yep</button>
+<button class="button-agenda">Here it is</button>
+<p>Miss your loved ones?</p>
+<a href="friends-family.html" class="button-friends"><button>See their faces</button></a>
 <p>Time to exercise your memory?</p>
-<button>Let's play</button>
+<button class="button-games">Let's play</button>
 <p>Need advice from like-minded people?</p>
-<button>Get in touch</button>
+<button class="button-chat">Get in touch</button>
 </div>
 
 <footer>

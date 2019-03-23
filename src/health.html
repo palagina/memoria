@@ -1,7 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="../styles.css" />
 
     <title>CSS Template</title>
@@ -15,41 +20,82 @@
       </a>
       <p id="logo">Memoria</p>
       <div id="links">
-        <a href="#diary">Diary</a>
-        <a href="#health">Health</a>
-        <a href="#agenda">Agenda</a>
-        <a href="#friends-family">Friends & Family</a>
-        <a href="#leisure">Leisure</a>
-        <a href="#community">My community</a>
+        <div class="links-wrapper">
+          <div class="link-box">
+            <a href="#diary"
+              ><p>Diary</p>
+              <i class="fas fa-book"></i
+            ></a>
+          </div>
+          <div class="link-box">
+            <a href="#health"
+              ><p>Health</p>
+              <i class="fas fa-file-medical"></i
+            ></a>
+          </div>
+          <div class="link-box">
+            <a href="#agenda"
+              ><p>Agenda</p>
+              <i class="fas fa-calendar-check"></i
+            ></a>
+          </div>
+          <div class="link-box">
+            <a href="friends-family.html"
+              ><p>Friends & Family</p>
+              <i class="fas fa-user-friends"></i
+            ></a>
+          </div>
+          <div class="link-box">
+            <a href="leisure.html"
+              ><p>Games</p>
+              <i class="fas fa-dice"></i
+            ></a>
+          </div>
+          <div class="link-box">
+            <a href="community.html"
+              ><p>Community</p>
+              <i class="fas fa-comments"></i
+            ></a>
+          </div>
+        </div>
       </div>
     </div>
 
     <div class="greet-text">
-      <h1 style="margin-bottom:40px"><span > My Health </span></h1>
-      <p class="selectable" onclick="toggleMedsList()">Meds for today
-        <i class="fas fa-angle-down"></i></p>
+      <h1 style="margin-bottom:40px"><span> My Health </span></h1>
+    </div>
+    <div class="greet-text">
+      <p class="selectable" onclick="toggleMedsList()">
+        Meds for today <i class="fas fa-angle-down"></i>
+      </p>
     </div>
 
     <ul class="medsList" id="medsList" style="display: none">
       <li class="medsItem checked">
         <div>
-          <div class="medsItemText" style="text-decoration: line-through"><b>09:00 Vitamin D</b><br />1 capsule</div>
+          <div class="medsItemText" style="text-decoration: line-through">
+            <b>09:00 Vitamin D</b><br />1 capsule
+          </div>
           <img
             class="pillImage"
             src="../assets/images/pills/pill1.png"
             alt="pill1"
-            style= "opacity: .2";
+            style="opacity: .2"
+            ;
           />
         </div>
       </li>
       <li class="medsItem checked">
         <div>
-          <div class="medsItemText" style="text-decoration: line-through"><b>11:00 Ibuprofene</b><br />1 capsule</div>
+          <div class="medsItemText" style="text-decoration: line-through">
+            <b>11:00 Ibuprofene</b><br />1 capsule
+          </div>
           <img
             class="pillImage"
             src="../assets/images/pills/pill2.png"
             alt="pill2"
-            style= "opacity: .2";
+            style="opacity: .2"
+            ;
           />
         </div>
       </li>
@@ -64,49 +110,48 @@
         </div>
       </li>
       <li class="medsItem">
-            <div>
-              <div class="medsItemText"><b>18:00 Ibuprofene</b><br />1 capsule</div>
-              <img
-                class="pillImage"
-                src="../assets/images/pills/pill2.png"
-                alt="pill2"
-              />
-            </div>
-          </li>
-          <li class="medsItem">
-                <div>
-                  <div class="medsItemText"><b>20:30 Vitamin D</b><br />1 capsule</div>
-                  <img
-                    class="pillImage"
-                    src="../assets/images/pills/pill1.png"
-                    alt="pill1"
-                  />
-                </div>
-              </li>
+        <div>
+          <div class="medsItemText"><b>18:00 Ibuprofene</b><br />1 capsule</div>
+          <img
+            class="pillImage"
+            src="../assets/images/pills/pill2.png"
+            alt="pill2"
+          />
+        </div>
+      </li>
+      <li class="medsItem">
+        <div>
+          <div class="medsItemText"><b>20:30 Vitamin D</b><br />1 capsule</div>
+          <img
+            class="pillImage"
+            src="../assets/images/pills/pill1.png"
+            alt="pill1"
+          />
+        </div>
+      </li>
     </ul>
 
     <div class="greet-text" style="margin-top:10px">
-        <p class="selectable" onclick="toggleAppsList()">Appointments
-        <i class="fas fa-angle-down"></i></p>
+      <p class="selectable" onclick="toggleAppsList()">
+        Appointments <i class="fas fa-angle-down"></i>
+      </p>
     </div>
-        <div id="appointments" class="appoinmentsList" style="display: none"></div>
+    <div id="appointments" class="appoinmentsList" style="display: none"></div>
 
     <div class="greet-text" style="margin-top:10px">
-        <p class="selectable"> Test results
-        <i class="fas fa-angle-down"></i></p>
+      <p class="selectable" onclick="toggleContact()">
+        Contact doctor <i class="fas fa-angle-down"></i>
+      </p>
     </div>
-
-
-    <div class="greet-text" style="margin-top:10px">
-            <p class="selectable" onclick="toggleContact()">Contact doctor
-            <i class="fas fa-angle-down"></i></p>
-        </div>
     <div class="contactDoctor" id="contactDoctor" style="display: none">
-            <p class="contactIcon"><i class="fas fa-phone" ></i></p>
-            <p class="contactIcon"><i class="fas fa-envelope-open-text" ></i></p>
-    </div>  
-          
-    
+      <p class="contactIcon"><i class="fas fa-phone"></i></p>
+      <p class="contactIcon"><i class="fas fa-envelope-open-text"></i></p>
+    </div>
+
+    <div class="greet-text" style="margin-top:10px">
+      <p class="selectable">Test results <i class="fas fa-angle-down"></i></p>
+    </div>
+
     <script src="../script.js"></script>
   </body>
 </html>
