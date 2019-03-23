@@ -1,14 +1,172 @@
+@import url('https://fonts.googleapis.com/css?family=Crimson+Text:300,400,400i,600,600i,700,700i|Megrim|Poppins:400,400i,500,500i,600,600i,700,700i');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
 body {
-    background-color: powderblue;
+    background-color: white;
+    text-align: center;
   }
 
-  h2 {
-    color: blue;
-  }
-  p {
-    color: red;
+  .topnav {
+    overflow: hidden;
+    /* background-color: slategray; */
+    position: relative;
   }
 
-  div {
-    color: green;
+  .topnav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+
+  .topnav a.icon {
+    background: black;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 11px 20px;
+  }
+
+  .topnav > a > i {
+    font-size: 30px;
+    color: rgb(102, 101, 101);
+    margin-top: 10px;
+  }
+
+  .topnav a:hover {
+    background-color: white;
+    color: black;
+  }
+  
+  #links {
+    background-color: #3882AE;
+  }
+
+  #logo {
+    /* background-color: #3882AE; */
+    color: #3882AE;
+    font-family: 'Megrim', cursive;
+    font-size: 1.5rem;
+    padding: 15px;
+    float: left;
+  }
+
+  .greet-text {
+    margin-top: 30px;
+    color: #3882AE;
+  }
+
+  .greet-text > h1 {
+    color: #C4C4C4;
+    margin-bottom: 10px;
+    font-family: 'Crimson Text', serif;
+    line-height: 32px;
+    font-weight: 200;
+    font-size: 1.7rem;
+  }
+
+  .greet-text > h1 > span {
+    color: #3882AE;
+    font-size: 2.7rem;
+    font-family: 'Crimson Text', serif;
+  }
+
+  .greet-text > h2 {
+    margin-bottom: 10px;
+    color: #C4C4C4;
+    font-family: 'Crimson Text', serif;
+    font-weight: 300;
+    font-size: 1.7rem;
+  }
+
+  .greet-text > h3 {
+    margin-bottom: 10px;
+    padding: 10px;
+    color: #C4C4C4;
+    font-family: 'Crimson Text', serif;
+    font-weight: 300;
+    font-size: 1.4rem;
+  }
+
+  .greet-text > h3 > span {
+    font-style: italic;
+    font-weight: 600;
+    font-size: 1.2rem;
+  }
+
+  .greet-text > i {
+    font-size: 3rem;
+    margin-bottom: 15px;
+  }
+
+  .greet-text > p {
+    margin: 50px auto 20px auto;
+    color: #3882AE;
+    font-size: 1.4rem;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  .plan-list > div > p {
+    line-height: 30px;
+    font-family: 'Poppins', sans-serif; 
+    margin: 10px 0 10px 0;
+    font-size: 1rem;
+  }
+
+  .plan-list > div > p > a:visited {
+    color: #3882AE;
+  }
+
+  .plan-list {
+    text-align: left;
+    list-style-position: inside;
+    line-height: 50px;
+}
+
+.plan-list > div > img {
+  height: 30px;
+  float: left;
+  margin-left: 20px;
+  margin-right: 15px;
+  line-height: 0px;
+  color: blue;
+}
+
+  .greet-text > img {
+    height: 70px;
+    margin: 10px;
+  }
+
+  .greet-text > h5 {
+    margin-top: 0px;
+    margin-bottom: 40px;
+  }
+
+  .questions {
+    background-color: rgb(144, 185, 209);
+    margin-top: 30px;
+    padding: 20px;
+  }
+
+  .questions > button {
+    background-color: white;
+    border-radius: 10px;
+    width: 45vw;
+    height: 30px;
+    margin-bottom: 10px;
+    font-size: 0.8rem;
+  }
+
+  .questions > p {
+    font-size: 1.2rem;
+    padding: 10px;
   }
