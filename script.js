@@ -8,7 +8,6 @@ function myFunction() {
 }
 
 /*   Health */
-
 getAppointments = () => {
   appointments.forEach(appointment => {
     var type = appointment.typeOfHealthcare;
