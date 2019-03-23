@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../styles.css" />
+
+    <title>CSS Template</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body onload="getAppointments()">
+    <div class="topnav">
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fas fa-bars"></i>
+      </a>
+      <p id="logo">Memoria</p>
+      <div id="links">
+        <a href="#diary">Diary</a>
+        <a href="#health">Health</a>
+        <a href="#agenda">Agenda</a>
+        <a href="#friends-family">Friends & Family</a>
+        <a href="#leisure">Leisure</a>
+        <a href="#community">My community</a>
+      </div>
+    </div>
+
+    <div class="greet-text">
+      <h1 style="margin-bottom:20px"><span> Agenda </span></h1>
+    </div>
+
+    <div class="calendar">
+      <p class="alignleft">
+        <i style="text-align: left" class="far fa-arrow-alt-circle-left"></i>
+      </p>
+      <p class="aligncenter">Sat, 24 March</p>
+      <p class="alignright"><i class="far fa-arrow-alt-circle-right"></i></p>
+    </div>
+
+    <div class="agenda-container">
+      <label class="agenda"
+        >Cook lunch
+        <input type="checkbox" checked="checked" />
+        <span class="checkmark"></span>
+      </label>
+      <label class="agenda"
+        >Call <a href="">Ivanka</a>
+        <input type="checkbox" />
+        <span class="checkmark"></span>
+      </label>
+      <label class="agenda"
+        >Take the pills
+        <input type="checkbox" />
+        <span class="checkmark"></span>
+      </label>
+      <label class="agenda"
+        >Pay the bills
+        <input type="checkbox" />
+        <span class="checkmark"></span>
+      </label>
+      <label class="agenda"
+        >Book appointment
+        <input type="checkbox" />
+        <span class="checkmark"></span>
+      </label>
+      <label class="agenda"
+        >Make America great again
+        <input type="checkbox" checked="checked"/>
+        <span class="checkmark"></span>
+      </label>
+      <label class="agenda"
+        >Check mail
+        <input type="checkbox" />
+        <span class="checkmark"></span>
+      </label>
+    </div>
+
+    <script src="../script.js"></script>
+  </body>
+</html>
