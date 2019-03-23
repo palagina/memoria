@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="../styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+    <title>CSS Template</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body onload="getAppointments()">
+    <div class="topnav">
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fas fa-bars"></i>
+      </a>
+      <p id="logo">Memoria</p>
+      <div id="links">
+        <a href="#diary">Diary</a>
+        <a href="#health">Health</a>
+        <a href="#agenda">Agenda</a>
+        <a href="#friends-family">Friends & Family</a>
+        <a href="#leisure">Leisure</a>
+        <a href="#community">My community</a>
+      </div>
+    </div>
+
+    <div class="greet-text">
+      <h1><span> My Health </span></h1>
+      <p class="selectable" onclick="toggleMedsList()">Meds for today</p>
+    </div>
+
+    <ul class="medsList" id="medsList">
+      <li class="medsItem checked">
+        <div>
+          <div class="medsItemText" style="text-decoration: line-through"><b>09:00 Vitamin D</b><br />1 capsule</div>
+          <img
+            class="pillImage"
+            src="../assets/images/pills/pill1.png"
+            alt="pill1"
+            style= "opacity: .2";
+          />
+        </div>
+      </li>
+      <li class="medsItem checked">
+        <div>
+          <div class="medsItemText" style="text-decoration: line-through"><b>11:00 Ibuprofene</b><br />1 capsule</div>
+          <img
+            class="pillImage"
+            src="../assets/images/pills/pill2.png"
+            alt="pill2"
+            style= "opacity: .2";
+          />
+        </div>
+      </li>
+      <li class="medsItem">
+        <div>
+          <div class="medsItemText"><b>15:00 Valcyte</b><br />2 capsules</div>
+          <img
+            class="pillImage"
+            src="../assets/images/pills/pill3.png"
+            alt="pill2"
+          />
+        </div>
+      </li>
+      <li class="medsItem">
+            <div>
+              <div class="medsItemText"><b>18:00 Ibuprofene</b><br />1 capsule</div>
+              <img
+                class="pillImage"
+                src="../assets/images/pills/pill2.png"
+                alt="pill2"
+              />
+            </div>
+          </li>
+          <li class="medsItem">
+                <div>
+                  <div class="medsItemText"><b>20:30 Vitamin D</b><br />1 capsule</div>
+                  <img
+                    class="pillImage"
+                    src="../assets/images/pills/pill1.png"
+                    alt="pill1"
+                  />
+                </div>
+              </li>
+    </ul>
+
+    <div class="greet-text"><p>Doctor's appointments</p></div>
+        <div id="appointments" class="appoinmentsList"></div>
+
+          
+    <footer></footer>
+
+    <script src="../script.js"></script>
+  </body>
+</html>
