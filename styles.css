@@ -26,6 +26,10 @@ body {
     display: block;
   }
 
+  .topnav #links {
+    display: none;
+  }
+
   .topnav a.icon {
     background: black;
     display: block;
