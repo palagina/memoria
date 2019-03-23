@@ -21,7 +21,6 @@ body {
 
   .topnav a {
     color: white;
-    padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
     display: block;
@@ -45,11 +44,6 @@ body {
     margin-top: 10px;
   }
 
-  .topnav a:hover {
-    background-color: white;
-    color: black;
-  }
-  
   #links {
     background-color: #3882AE;
     position: relative;
@@ -418,6 +412,21 @@ body {
 }
 
 /* Agenda */
+
+.addAgenda{
+  background-color: #3882ae;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  padding: 10px;
+  width: 100px;
+  border-radius: 5px;
+}
+
 .calendar {
   background-color: rgb(144, 185, 209);
   padding: 10px;
@@ -445,6 +454,7 @@ body {
 
 .agenda-container {
   margin: 20px;
+  height: 300px;
 }
 
 .agenda {
@@ -502,4 +512,98 @@ body {
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
+}
+
+
+/*  Diary */
+
+.diarynav > a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 6px 16px;
+  
+}
+
+.diarynav > a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.previous {
+  background-color: #f1f1f1;
+  color: black;
+  margin-right: 200px;
+}
+
+.next {
+  background-color: white;
+  color: black;
+  margin-left: 20px;
+}
+
+.round {
+  border-radius: 50%;
+}
+
+
+.diarynav {
+  background-color: darkblue;
+  color: white;
+  padding: 8px;
+}
+
+#curdata {
+  font-size: 20px;
+}
+
+.record > h3 {
+  margin-top: 23px;
+}
+
+.recordingImage {
+  width: 120px;
+  height: 120px;
+  margin-top: 15px;
+ 
+}
+
+.plusImage {
+  width: 50px;
+  height: 50px;
+  margin-top: 15px;
+}
+
+.noteImage {
+  width: 118px;
+  height: 118px;
+  margin-top: 15px;
+}
+
+.playImage {
+  width: 30px;
+  height: 30px;
+  margin-top: 15px;
+  float: left;
+  margin-left: 15px;
+
+}
+
+.pauseImage {
+  width: 26px;
+  height: 26px;
+  margin-top: 15px;
+  float: left;
+  margin-left: 3px;
+}
+
+.playpause {
+  display: inline;
+}
+
+.trackImage {
+  width: 200px;
+  height: 50px;
+  margin-top: 5px;
+  float: left;
+  margin-left: 10px;
 }
