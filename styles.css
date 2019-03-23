@@ -175,13 +175,13 @@
     padding: 10px;
   }
 
-
 /*   Health */
 .selectable {
   background-color: rgb(189, 216, 231);
   border-radius: 5px;
   padding: 10px;
-  margin: 0px 10px;
+  margin: 10px 10px 0px 10px !important;
+  width: 95%;
 }
 
 .medsList {
@@ -219,10 +219,35 @@
   width: 70px;
 }
 
-.appointmentsList {
-
+.appoinmentsList {
+ margin: 10px 10px;
+ display: none;
+ text-align: left;
 }
 
 .appListItem{
+  border-radius: 5px;
+  border: 1px solid;
+  border-color:rgb(139, 133, 133);
+  padding: 10px;
+  margin-bottom: 5px;
+}
 
+.contactDoctor {
+  padding: 10px;
+  width: 95%;
+  margin: auto;
+  border-radius: 5px;
+}
+
+.contactIcon {
+    font-size: 36px;
+    color: #3882AE;
+    background-color: yellow;
+    border-radius: 50%;
+    border: 2px #3882AE solid;
+    width: 60px;
+    height: 60px;
+    display: inline-block;
+    margin: 10px 20px;
 }

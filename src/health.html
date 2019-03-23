@@ -1,13 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" href="../styles.css" />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
-      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
-      crossorigin="anonymous"
-    />
+
     <title>CSS Template</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -29,11 +25,12 @@
     </div>
 
     <div class="greet-text">
-      <h1><span> My Health </span></h1>
-      <p class="selectable" onclick="toggleMedsList()">Meds for today</p>
+      <h1 style="margin-bottom:40px"><span > My Health </span></h1>
+      <p class="selectable" onclick="toggleMedsList()">Meds for today
+        <i class="fas fa-angle-down"></i></p>
     </div>
 
-    <ul class="medsList" id="medsList">
+    <ul class="medsList" id="medsList" style="display: none">
       <li class="medsItem checked">
         <div>
           <div class="medsItemText" style="text-decoration: line-through"><b>09:00 Vitamin D</b><br />1 capsule</div>
@@ -88,12 +85,28 @@
               </li>
     </ul>
 
-    <div class="greet-text"><p>Doctor's appointments</p></div>
-        <div id="appointments" class="appoinmentsList"></div>
+    <div class="greet-text" style="margin-top:10px">
+        <p class="selectable" onclick="toggleAppsList()">Appointments
+        <i class="fas fa-angle-down"></i></p>
+    </div>
+        <div id="appointments" class="appoinmentsList" style="display: none"></div>
 
+    <div class="greet-text" style="margin-top:10px">
+        <p class="selectable"> Test results
+        <i class="fas fa-angle-down"></i></p>
+    </div>
+
+
+    <div class="greet-text" style="margin-top:10px">
+            <p class="selectable" onclick="toggleContact()">Contact doctor
+            <i class="fas fa-angle-down"></i></p>
+        </div>
+    <div class="contactDoctor" id="contactDoctor" style="display: none">
+            <p class="contactIcon"><i class="fas fa-phone" ></i></p>
+            <p class="contactIcon"><i class="fas fa-envelope-open-text" ></i></p>
+    </div>  
           
-    <footer></footer>
-
+    
     <script src="../script.js"></script>
   </body>
 </html>

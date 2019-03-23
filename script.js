@@ -37,6 +37,24 @@ function myFunction() {
   }
   }
   
+  toggleAppsList = () => {
+    var x = document.getElementById("appointments");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+  }
+
+  toggleContact = () => {
+    var x = document.getElementById("contactDoctor");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+  }
+
   formatMinutes = (d) => { 
     return (d.getMinutes() < 10 ? '0' : '') + d.getMinutes();
   }
