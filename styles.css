@@ -40,7 +40,7 @@ body {
 
   .topnav > a > i {
     font-size: 30px;
-    color: rgb(102, 101, 101);
+    color: #7a7a7a;
     margin-top: 10px;
   }
 
@@ -56,7 +56,7 @@ body {
     justify-content: space-around;
     width: 100%;
     position: relative;
-    top: -55px;
+    top: -45px;
   }
 
   .link-box {
@@ -71,7 +71,6 @@ body {
   }
 
   #logo {
-    /* background-color: #3882AE; */
     color: #3882AE;
     font-family: 'Megrim', cursive;
     font-size: 1.5rem;
@@ -85,7 +84,7 @@ body {
   }
 
   .greet-text > h1 {
-    color: #C4C4C4;
+    color: #969595;
     margin-bottom: 10px;
     font-family: 'Crimson Text', serif;
     line-height: 32px;
@@ -101,7 +100,7 @@ body {
 
   .greet-text > h2 {
     margin-bottom: 10px;
-    color: #C4C4C4;
+    color: #969595;
     font-family: 'Crimson Text', serif;
     font-weight: 300;
     font-size: 1.7rem;
@@ -110,7 +109,7 @@ body {
   .greet-text > h3 {
     margin-bottom: 10px;
     padding: 10px;
-    color: #C4C4C4;
+    color: #969595;
     font-family: 'Crimson Text', serif;
     font-weight: 300;
     font-size: 1.4rem;
@@ -185,19 +184,19 @@ body {
   }
 
   .questions {
-    background-color: rgb(144, 185, 209);
+    background-color: #90b9d1;
     margin-top: 30px;
     padding: 20px;
   }
 
   .questions button {
     background-color: #EDE22D;
-    /* border: 2px white; */
-    border-radius: 10px;
+    border-radius: 15px;
     width: 45vw;
-    height: 30px;
+    height: 35px;
     margin-bottom: 20px;
-    font-size: 0.8rem;
+    font-size: 1rem;
+    color: #5f5f5f;
   }
 
   .questions button:focus {
@@ -205,7 +204,10 @@ body {
   }
 
   .questions > p {
-    font-size: 1.1rem;
+    color: white;
+    font-weight: 200;
+    letter-spacing: 2px;
+    font-size: 1rem;
     padding: 10px;
   }
 
@@ -217,6 +219,13 @@ body {
     color: #3882AE;
     font-weight: 300;
     margin-top: 10px;
+  }
+
+  .friends-wrapper h4 {
+    margin: 10px;
+    font-weight: 300;
+    color: #7a7a7a;
+    margin-bottom: 20px;
   }
 
   .friend-box {
@@ -264,7 +273,7 @@ body {
   .leisure-wrapper h4 {
     margin: 10px;
     font-weight: 300;
-    color: rgb(122, 122, 122);
+    color: #7a7a7a;
   }
 
   .leisure-wrapper p {
@@ -334,13 +343,38 @@ body {
     font-size: 1rem;
   }
 
-/*   Health */
+/* -----------------  Health ----------------- */
+
+.health-text span {
+  font-family: 'Crimson Text', serif;
+    color: #3882AE;
+    font-weight: 300;
+    margin-top: 10px;
+}
+
+.health-text h1 {
+  margin-bottom: 30px;
+}
+
+.health-text h4 {
+  margin: 10px;
+  font-weight: 300;
+  color: #7a7a7a;
+  margin-bottom: 20px;
+}
+
 .selectable {
-  background-color: rgb(189, 216, 231);
-  border-radius: 5px;
+  /* background-color: #EDE22D; */
+  background-color: #90b9d1;
+  border-radius: 10px;
   padding: 10px;
   margin: 10px 10px 0px 10px !important;
   width: 95%;
+}
+
+.health-text p {
+  font-weight: 300;
+  color: white;
 }
 
 .medsList {
@@ -365,17 +399,23 @@ body {
   border-radius: 5px;
   border: 1px solid;
   border-color: rgb(139, 133, 133);
+  font-family: 'Poppins', sans-serif;
 }
 
 .medsItemText {
   display: inline-block;
   margin-top: 5%;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.9rem;
+  color: #7a7a7a;
 }
 
 .pillImage {
   float: right;
-  height: 70px;
-  width: 70px;
+  height: 50px;
+  width: 50px;
+  margin-top: 15px;
+  margin-right: 5px;
 }
 
 .appoinmentsList {
@@ -397,24 +437,47 @@ body {
   width: 95%;
   margin: auto;
   border-radius: 5px;
+  justify-content: space-around;
 }
 
-.contactIcon {
+.contactDoctor p {
+  font-size: 1rem;
+  color: #7a7a7a;
+  font-family: 'Poppins', sans-serif;
+}
+
+.contactDoctor-box {
+  width: 20vw;
+}
+
+.contactIcon i {
   font-size: 36px;
   color: #3882ae;
-  background-color: yellow;
-  border-radius: 50%;
-  border: 2px #3882ae solid;
   width: 60px;
   height: 60px;
   display: inline-block;
-  margin: 10px 20px;
+  margin-top: 20px;
 }
 
-/* Agenda */
+/* ---------------- Agenda ------------------ */
+
+.agenda-text h1 {
+  font-family: 'Crimson Text', serif;
+  color: #3882AE;
+  font-weight: 300;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.agenda-text h4 {
+  margin: 10px;
+  font-weight: 300;
+  color: #7a7a7a;
+  margin-bottom: 20px;
+}
 
 .addAgenda{
-  background-color: #3882ae;
+  background-color: #3882AE;
   border: none;
   color: white;
   text-align: center;
@@ -427,8 +490,12 @@ body {
   border-radius: 5px;
 }
 
+.addAgenda:focus {
+  outline: none;
+}
+
 .calendar {
-  background-color: rgb(144, 185, 209);
+  background-color: #90b9d1;
   padding: 10px;
   display: inline-flex;
   width: 100%;
@@ -445,6 +512,8 @@ body {
   float: left;
   width: 60%;
   text-align: center;
+  font-size: 1.1rem;
+  line-height: 2rem;
 }
 .alignright {
   float: left;
@@ -454,17 +523,18 @@ body {
 
 .agenda-container {
   margin: 20px;
+  padding-top: 20px;
   height: 300px;
 }
 
 .agenda {
+  color: #7a7a7a;
   display: block;
   position: relative;
-  padding-left: 35px;
-  margin-bottom: 12px;
-  float: left;
+  padding-left: 40px;
+  margin-bottom: 14px;
   text-align: left;
-  font-size: 22px;
+  font-size: 17px;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -479,6 +549,10 @@ body {
   width: 0;
 }
 
+.agenda a:visited {
+  color: #7a7a7a;
+}
+
 .checkmark {
   position: absolute;
   top: 0;
@@ -489,7 +563,7 @@ body {
 }
 
 .agenda input:checked ~ .checkmark {
-  background-color: #2196f3;
+  background-color: #90b9d1;
 }
 
 .checkmark:after {
@@ -515,7 +589,22 @@ body {
 }
 
 
-/*  Diary */
+/* ---------------- Diary ----------------- */
+
+.diary-text h1 {
+  font-family: 'Crimson Text', serif;
+  color: #3882AE;
+  font-weight: 300;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.diary-text h4 {
+  margin: 15px;
+  font-weight: 300;
+  color: #7a7a7a;
+  margin-bottom: 10px;
+}
 
 .diarynav > a {
   text-decoration: none;
@@ -556,6 +645,11 @@ body {
   font-size: 20px;
 }
 
+.record {
+  display: flex;
+  margin-bottom: 20px;
+}
+
 .record > h3 {
   margin-top: 23px;
 }
@@ -564,36 +658,50 @@ body {
   width: 120px;
   height: 120px;
   margin-top: 15px;
- 
 }
 
-.plusImage {
-  width: 50px;
-  height: 50px;
-  margin-top: 15px;
+.record-box {
+  width: 50vw;
 }
 
-.noteImage {
-  width: 118px;
-  height: 118px;
-  margin-top: 15px;
+.record-box h3 {
+  color: #3882ae;
+  font-size: 0.8rem;
+  padding: 10px 20px 10px 20px;
+  font-weight: 300;
 }
 
-.playImage {
-  width: 30px;
-  height: 30px;
-  margin-top: 15px;
-  float: left;
-  margin-left: 15px;
-
+.record-box i {
+  font-size: 50px;
+  background-color: #d4d3d3;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  line-height: 95px;
+  color: #3882ae;
 }
 
-.pauseImage {
-  width: 26px;
-  height: 26px;
-  margin-top: 15px;
-  float: left;
-  margin-left: 3px;
+.record-box h4 {
+  font-size: 0.8rem;
+  margin: 20px 30px 0 30px;
+  font-weight: 300;
+  color: #7a7a7a;
+}
+
+#plus-sign {
+  font-size: 20px;
+  background-color: white;
+  border: none;
+  width: 20px;
+  height: 20px;
+  color: #464545;
+  margin-bottom: 20px;
+  line-height: 40px;
+}
+
+.record-list {
+  color: #464545;
+  margin-bottom: 15px;
 }
 
 .playpause {
@@ -602,8 +710,41 @@ body {
 
 .trackImage {
   width: 200px;
-  height: 50px;
-  margin-top: 5px;
-  float: left;
+  height: 30px;
   margin-left: 10px;
+}
+
+.note-box i {
+  font-size: 27px;
+  line-height: 25px;
+  display: inline;
+  color: #464545;
+  padding: 8px;
+  margin-top: 5px;
+}
+
+.note-box p {
+  color: #7a7a7a;
+  margin: 5px;
+}
+.note-box {
+  margin: 10px;
+}
+
+.calendar i {
+  color: white;
+  font-size: 1.7rem;
+}
+
+.diary-search {
+  width: 300px;
+  height: 30px;
+  border: 1px rgb(163, 163, 163) solid;
+  text-align: center;
+  border-radius: 15px;
+  margin-bottom: 15px;
+}
+
+.diary-search:focus {
+  outline: none;
 }

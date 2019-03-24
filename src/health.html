@@ -33,10 +33,12 @@
       </div>
     </div>
 
-    <div class="greet-text">
-      <h1 style="margin-bottom:40px"><span> My Health </span></h1>
+    <div class="health-text">
+      <h1><span>My Health</span></h1>
+      <h4>Here is your health information:</h4>
     </div>
-    <div class="greet-text">
+    
+    <div class="health-text">
       <p class="selectable" onclick="toggleMedsList()">
         Meds for today <i class="fas fa-angle-down"></i>
       </p>
@@ -103,24 +105,24 @@
       </li>
     </ul>
 
-    <div class="greet-text" style="margin-top:10px">
+    <div class="health-text" style="margin-top:10px">
       <p class="selectable" onclick="toggleAppsList()">
         Appointments <i class="fas fa-angle-down"></i>
       </p>
     </div>
     <div id="appointments" class="appoinmentsList" style="display: none"></div>
 
-    <div class="greet-text" style="margin-top:10px">
+    <div class="health-text" style="margin-top:10px">
       <p class="selectable" onclick="toggleContact()">
         Contact doctor <i class="fas fa-angle-down"></i>
       </p>
     </div>
     <div class="contactDoctor" id="contactDoctor" style="display: none">
-      <p class="contactIcon"><i class="fas fa-phone"></i></p>
-      <p class="contactIcon"><i class="fas fa-envelope-open-text"></i></p>
+      <div class="contactDoctor-box"><p class="contactIcon"><i class="fas fa-phone"></i>Call</p></div>
+      <div class="contactDoctor-box"><p class="contactIcon"><i class="fas fa-envelope-open-text"></i>Email</p></div>
     </div>
 
-    <div class="greet-text" style="margin-top:10px">
+    <div class="health-text" style="margin-top:10px">
       <p class="selectable">Test results <i class="fas fa-angle-down"></i></p>
     </div>
 

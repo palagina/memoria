@@ -59,7 +59,7 @@ toggleAppsList = () => {
 toggleContact = () => {
   var x = document.getElementById("contactDoctor");
   if (x.style.display === "none") {
-    x.style.display = "block";
+    x.style.display = "flex";
   } else {
     x.style.display = "none";
   }
